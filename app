@@ -1,3 +1,4 @@
+#!/usr/bin/env coffee
 request = require 'request'
 request 'https://slack.com/api/users.list?token=xoxp-3331214327-3349545555-3365091811-9c50c8',(e,res,body)->
   request 'https://api.typeform.com/v0/form/Ei4XtB?key=2d9ef2654a37c51cb48e32fca5024eebc3b09bd8&completed=true&offset='+JSON.parse(body).members.length,(e,res,body)->
