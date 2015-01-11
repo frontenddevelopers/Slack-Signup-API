@@ -27,3 +27,7 @@ build/Release
 node_modules
 
 # Debug log from npm
+
+
+#Key file
+keys.json
