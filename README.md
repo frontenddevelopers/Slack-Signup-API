@@ -14,7 +14,7 @@ Run app.coffee
 > coffee app.coffee
 ``
 
-You could also compile to js (would be quicker):
+You could also compile to js (would run quicker):
 ``
 > coffee -c app.coffee
 > node app.js
