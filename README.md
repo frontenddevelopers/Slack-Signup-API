@@ -1,4 +1,4 @@
-# Typeform to Slack
+# Slack Signup API
 
 Requires:
 Mongo DB
