@@ -1,28 +1,27 @@
 # Slack Signup API
 
-Requires:
-Mongo DB
-NodeJS
-
-Setup:
-Run mongoJS:
-```
- mongod --dbpath db/
-```
-Run app.coffee
-```
- coffee app.coffee
+## Run MongoDB
+```bash
+$ mongod
 ```
 
-You could also compile to js (would run quicker):
-```
- coffee -c app.coffee
- node app.js
+## Server Setup
+```bash
+$ make
 ```
 
-May be worth putting in a cron job for every 10 mins:
+## Customize ALLOW_ORIGIN Environment Variable
+```bash
+$ ALLOW_ORIGIN=mywebsite.com make server
 ```
- crontab -e
 
-*/10 * * * * /path/to/script
+## Try it out
+```bash
+$ open example/index.html
+$ make
+```
+
+## Tests
+```bash
+$ make tests
 ```
