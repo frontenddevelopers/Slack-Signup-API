@@ -1,0 +1,42 @@
+{
+  "name": "slack-signup-api",
+  "version": "0.1.0",
+  "description": "Slack Signup API",
+  "main": "main.js",
+  "author": "Robert Pearce",
+  "homepage": "https://github.com/frontenddevelopers/Slack-Signup-API",
+  "license": "MIT",
+  "keywords": [
+    "frontend",
+    "backend",
+    "frontenddevelopers",
+    "backenddevelopers",
+    "slack",
+    "signup",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontenddevelopers/Slack-Signup-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frontenddevelopers/Slack-Signup-API.git/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4",
+    "mongodb": "^1.4.38",
+    "mongoskin": "^1.4.13",
+    "qs": "^3.1.0",
+    "request": "^2.57.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "nock": "^2.4.0",
+    "sinon": "^1.14.1"
+  },
+  "scripts": {
+    "start": "node bin/www",
+    "test": "find ./test -name '*.test.js' | xargs mocha --recursive ./test"
+  }
+}
