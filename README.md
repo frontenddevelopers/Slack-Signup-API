@@ -1,24 +1,20 @@
 # Slack Signup API
 
-## Run MongoDB
+## Setup
+### Run MongoDB in another terminal tab
 ```bash
 $ mongod
 ```
 
-## Server Setup
-```bash
-$ make
-```
-
-## Customize ALLOW_ORIGIN Environment Variable
-```bash
-$ ALLOW_ORIGIN=mywebsite.com make server
-```
-
-## Try it out
+### Try it out
 ```bash
 $ open example/index.html
-$ make
+$ SLACK_TOKEN=myslacktoken make
+```
+
+### Customize ALLOW_ORIGIN Environment Variable
+```bash
+$ ALLOW_ORIGIN=mywebsite.com SLACK_TOKEN=myslacktoken make server
 ```
 
 ## Tests
